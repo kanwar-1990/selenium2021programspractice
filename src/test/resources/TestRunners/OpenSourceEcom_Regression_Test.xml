@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<<!- 
+	<!-- 1-We have done Parallel execution 2- Can give parameter, like URL,USERNAME,PASSWORD 
+	3- cross browser Execution-- we can have one browser as firefox another as 
+	Chrome and execute them parallely 4- if we Want to skip any method execution 
+	in a Test case that is also possible with exclude tag 5- We can provide parallel 
+	execution at method level as well 6- When we give thread-count=2, At Test 
+	level what happens is that thread will take up a test case and starts executing 
+	and once its free it will start the other one we can have the Thread count 
+	on the basis of Test execution as well , which can help reducing the time 
+	line of the Executiom -->
+
+
+<suite name="BasicTestNGOpenSourceEcommApp Regression suite"
+	thread-count="2" parallel="tests">
+	<test name="LoginTests" verbose="2">
+
+		<parameter name="browser" value="Chrome" />
+		<parameter name="url"
+			value="https://s1.demo.opensourcecms.com/opencart/index.php?route=account/login" />
+		<parameter name="username" value="knwrpl.singh@gmail.com" />
+		<parameter name="password" value="Kanwar@77" />
+
+		<classes>
+			<class name="com.Parralel.tests.LoginTests" />
+		</classes>
+	</test> <!-- verbose means how detailed you want the output on the console, maximum 
+		verbose we can give is 10 -->
+
+	<test name="RegisterTest" verbose="2">
+
+		<parameter name="browser" value="firefox" />
+		<parameter name="url"
+			value="https://s1.demo.opensourcecms.com/opencart/index.php?route=account/register" />
+		<classes>
+			<class name="com.Parralel.tests.RegisterTest" />
+			<!-- We can use thread in method and also exclude method in test, though 
+				it is not a good practice -->
+
+			<!-- <methods> <exclude name="addEmployeeTestCase" /> </methods> -->
+		
+		</classes>
+	</test> <!-- verbose means how detailed you want the output on the console, maximum 
+		verbose we can give is 10 -->
+
+
+</suite> <!-- Default suite -->

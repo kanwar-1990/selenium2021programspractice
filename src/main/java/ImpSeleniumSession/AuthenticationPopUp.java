@@ -1,0 +1,26 @@
+package ImpSeleniumSession;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class AuthenticationPopUp {
+
+	public static void main(String[] args) {
+
+		WebDriverManager.chromedriver().setup();
+
+		WebDriver driver = new ChromeDriver();
+
+		String username = "admin";
+		String password = "admin";
+
+		driver.get("https://" + username + ":" + password + "@the-internet.herokuapp.com/basic_auth");
+
+		// Authentication pop up==we can use if network websites are used
+		// where default pop up comes to login with username and password
+
+	}
+
+}

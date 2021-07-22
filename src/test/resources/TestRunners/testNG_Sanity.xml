@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+
+<suite name="BasicTestNGTesting Regression suite">
+	<test name="MyRegression test" verbose="4">
+		<classes>
+			<class name="TestNGSession.invocationcount" />
+			<class name="TestNGSession.PriorityTest" />
+
+		</classes>
+
+		<!-- got this file from test-output, where we can get this xml file,and 
+			add suite name, change test name add classes, the file i have used is from 
+			index.html , took property and checked in chrome -->
+
+
+	</test> <!-- verbose means how detailed information you want more logs on the console 
+		u want, maximum verbose we can give is 10 -->
+
+
+</suite> <!-- Default suite -->

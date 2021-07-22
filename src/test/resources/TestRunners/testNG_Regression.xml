@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="BasicTestNGTesting Regression suite">
+	<test name="MyRegression test" verbose="2">
+		<classes>
+			<class name="TestNGSession.dependsonMethod" />
+			<class name="TestNGSession.expectedException" />
+			<class name="TestNGSession.invocationcount" />
+			<class name="TestNGSession.loginPage" />
+			<class name="TestNGSession.PriorityTest" />
+
+		</classes>
+	</test> <!-- verbose means how detailed you want the output on the console, maximum 
+		verbose we can give is 10 -->
+</suite> <!-- Default suite -->
