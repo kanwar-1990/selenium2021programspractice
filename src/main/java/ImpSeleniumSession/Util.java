@@ -35,6 +35,7 @@ public class Util {
 
 		try {
 			element = driver.findElement(locator);
+			JavaScriptutil.flash(element, driver);
 
 		} catch (Exception e) {
 
