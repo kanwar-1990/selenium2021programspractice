@@ -54,7 +54,17 @@ public class JavaScripTest {
 		WebElement ForgotLink = driver.findElement(By.linkText("Forgot Password?"));
 
 		JavaScriptutil.scrollIntoView(ForgotLink, driver);
+		
+		ForgotLink.click();
 
+
+	
+	
+	
+	
+	
+	
+	
 	}
 
 }
