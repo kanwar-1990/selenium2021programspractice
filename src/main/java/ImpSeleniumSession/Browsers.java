@@ -29,7 +29,7 @@ public class Browsers {
 			WebDriverManager.chromedriver().setup();
 			driver = new SafariDriver();
 			break;
-<<<<<<< HEAD
+
 			
 		case "ie":
 			WebDriverManager.chromedriver().setup();
@@ -37,13 +37,8 @@ public class Browsers {
 			break;
 			
 			
-=======
-				
-			case "ie":
-			WebDriverManager.chromedriver().setup();
-			driver = new InternetExplorerDriver();
-			break;	
->>>>>>> 10382e02337156f0461f4dacc5efa45e8c78521d
+
+	
 
 		default:
 			System.out.println("Please type the correct browser Name");
