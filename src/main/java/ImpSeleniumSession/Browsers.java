@@ -29,10 +29,7 @@ public class Browsers {
 			driver = new SafariDriver();
 			break;
 				
-			case "ie":
-			WebDriverManager.chromedriver().setup();
-			driver = new InternetExplorerDriver();
-			break;	
+				
 
 		default:
 			System.out.println("Please type the correct browser Name");
