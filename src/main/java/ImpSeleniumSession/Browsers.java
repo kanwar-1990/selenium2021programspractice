@@ -36,10 +36,7 @@ public class Browsers {
 			driver = new InternetExplorerDriver();
 			break;
 			
-			
-
-	
-
+		
 		default:
 			System.out.println("Please type the correct browser Name");
 			break;
