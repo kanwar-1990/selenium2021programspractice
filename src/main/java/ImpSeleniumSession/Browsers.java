@@ -3,6 +3,7 @@ package ImpSeleniumSession;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -28,6 +29,13 @@ public class Browsers {
 			WebDriverManager.chromedriver().setup();
 			driver = new SafariDriver();
 			break;
+			
+		case "ie":
+			WebDriverManager.chromedriver().setup();
+			driver = new InternetExplorerDriver();
+			break;
+			
+			
 
 		default:
 			System.out.println("Please type the correct browser Name");
