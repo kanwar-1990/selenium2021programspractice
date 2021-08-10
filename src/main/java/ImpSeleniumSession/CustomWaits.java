@@ -1,7 +1,5 @@
 package ImpSeleniumSession;
 
-import javax.lang.model.element.Element;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -32,6 +30,15 @@ public class CustomWaits {
 
 	}
 
+	/**
+	 * this wrapper method helps in returning the element if found
+	 * 
+	 * @param driver
+	 * @param locator
+	 * @param timeout
+	 * @return
+	 */
+
 	public static WebElement getElementfoundwithCustomWait(WebDriver driver, By locator, int timeout) {
 		WebElement element = null;
 
@@ -43,9 +50,9 @@ public class CustomWaits {
 			} catch (Exception e) {
 
 				System.out.println("the Time to find in element in seconds is--> " + i + "sec");
-				
+
 				try {
-					
+
 					Thread.sleep(1000);
 				} catch (InterruptedException e1) {
 				}
@@ -57,4 +64,39 @@ public class CustomWaits {
 		return element;
 	}
 
+	/**
+	 * this genric method is an customWait and helps in finding element is displayed
+	 * or not
+	 * 
+	 * @param driver
+	 * @param locator
+	 * @param timeout
+	 * @return
+	 */
+	public static boolean CheckElementisDisplayed(WebDriver driver, By locator, int timeout) {
+		WebElement element = null;
+		boolean flag = false;
+
+		for (int i = 0; i < timeout; i++) {
+
+			try {
+				element = driver.findElement(locator);
+				flag = element.isDisplayed();
+				break;
+			} catch (Exception e) {
+
+				System.out.println("the Time to find in element in seconds is--> " + i + "sec");
+
+				try {
+
+					Thread.sleep(1000);
+				} catch (InterruptedException e1) {
+				}
+
+			}
+
+		}
+
+		return flag;
+	}
 }
