@@ -40,5 +40,10 @@ public class practive {
 		System.out.println("List of the Items are");
 		return ListitOut;
 	}
+	public void CheckingGitCommit()
+	{
+				System.out.println("Checking git conflict--other team member is working on the same and same method which u are working and already pushed the code");
+
+	}
 
 }
