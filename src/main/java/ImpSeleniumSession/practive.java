@@ -45,11 +45,7 @@ public class practive {
 				System.out.println("Checking git conflict--other team member is working on the same and same method which u are working and already pushed the code");
 
 	}
-	public void CheckingGitCommit(String TestingAgain)
-	{
-				System.out.println("Checking git conflict--other team member is working on the same and same method which u are working and already pushed the code");
-
-	}
+	
 
 	public void CheckingGitCommit(String TestingAgain)
 	{
