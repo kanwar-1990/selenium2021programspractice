@@ -25,7 +25,7 @@ public class ActionEventsSendkeyOptions {
 		Actions action = new Actions(driver);
 
 		// We can also use Actions class to do send key options , where actions help in
-		// moving to the center of the element
+		// moving to the center of the element and then perform 
 
 		action.sendKeys(emailid, "text@gmail.com").build().perform();
 		action.sendKeys(password, "admin").build().perform();

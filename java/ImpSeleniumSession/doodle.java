@@ -15,10 +15,14 @@ public class doodle {
 			WebDriverManager.chromedriver().setup();
 
 			WebDriver driver = new ChromeDriver();
-			driver.get("https://www.demoqa.com/automation-practice-form");
+			driver.get("https://app.hubspot.com/login?__cf_chl_jschl_tk__=pmd_jkYPh2lNbJLn9pmhZHn9kKiM1Nb40qxcNi3viGURFl8-1630318751-0-gqNtZGzNAhCjcnBszQgl");
 			driver.manage().window().maximize();
 			driver.findElement(By.cssSelector("div[class=' css-yk16xz-control'] div[class=' css-1hwfws3']")).click();
 
 		}
+	}
+	public void GitConflict()
+	{
+		
 	}
 }
