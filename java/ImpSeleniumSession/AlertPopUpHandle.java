@@ -21,7 +21,7 @@ public class AlertPopUpHandle {
 		Thread.sleep(5000);
 
 		// Alert pop up are jacscript pop up which are not webelement ,hence we need to
-		// use alert method to switch the windoe
+		// use alert method to switch the window
 		//alert doesnt have a pagesource any webelement hence need to switch the window
 
 		Alert alert = driver.switchTo().alert();

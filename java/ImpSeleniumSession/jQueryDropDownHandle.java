@@ -27,7 +27,7 @@ public class jQueryDropDownHandle {
 
 		driver.findElement(By.id("justAnInputBox")).click();
 
-		// Baoundry Value Analysis
+		// Boundry Value Analysis
 		// this can be used for single Value
 		// SelectChoiceValue(driver, "choice 7");
 		// for Selecting multi value---- We can use String as String...(With three dot)
