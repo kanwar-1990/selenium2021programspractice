@@ -26,9 +26,11 @@ public class CheckBoxes {
 
 		// 0 to 6
 		for (int i = 0; i < checkbox.size(); i++) {
-			checkbox.get(i).click();
-		    continue;
+			checkbox.get(i);
+           continue;
 		}
+		  
+		
 		/*
 		
 				// Selecting first two element
